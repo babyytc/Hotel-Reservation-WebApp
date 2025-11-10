@@ -142,6 +142,6 @@ export default function Reviews() {
           Share Your Experience
         </a>
       </div>
-    </section>
+    </article>
   );
 }
