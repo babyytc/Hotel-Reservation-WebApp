@@ -11,8 +11,11 @@ import AdminUser from "./pages/AdminUser";
 import AdminBooking from "./pages/AdminBooking";
 import Booking from "./pages/Booking";
 import BookingConfirmation from "./pages/BookingConfirmation";
+import ConfirmBooking from "./pages/ConfirmBooking";
+import Payment from "./pages/Payment";
 import UserPage from "./pages/UserPage";
 import AdminRoute from "./components/AdminRoute";
+import WriteReview from "./pages/WriteReview";
 
 export default function App() {
   return (
@@ -28,7 +31,10 @@ export default function App() {
         <Route path="/admin" element={<AdminRoute><Admin /></AdminRoute>} />
         <Route path="/admin/users" element={<AdminRoute><AdminUser /></AdminRoute>} />
         <Route path="/admin/bookings" element={<AdminRoute><AdminBooking /></AdminRoute>} />
-        <Route path="/BookingConfirmation" element={<BookingConfirmation/>}/>
+        <Route path="/BookingConfirmation" element={<BookingConfirmation />} />
+        <Route path="/ConfirmBooking" element={<ConfirmBooking />} />
+        <Route path="/payment" element={<Payment />} />
+        <Route path="/reviews/new" element={<WriteReview />} />
         <Route path="/account" element={<UserPage />} />
       </Routes>
     </BrowserRouter>
